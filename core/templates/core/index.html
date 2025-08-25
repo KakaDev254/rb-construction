@@ -1,0 +1,356 @@
+{% extends "base.html" %} {% load static %} {% block title %}Home | RB
+Construction{% endblock %} {% block content %}
+<!-- Hero Section Slider -->
+<section id="home" class="relative h-screen overflow-hidden">
+  <!-- Slides -->
+  <div class="absolute inset-0 w-full h-full">
+    <div
+      class="slide absolute inset-0 w-full h-full transition-opacity duration-1000 opacity-100"
+    >
+      <img
+        src="{% static 'images/hero1.jpg' %}"
+        alt="Construction 1"
+        class="w-full h-full object-cover brightness-50"
+      />
+    </div>
+    <div
+      class="slide absolute inset-0 w-full h-full transition-opacity duration-1000 opacity-0"
+    >
+      <img
+        src="{% static 'images/vent2.jpg' %}"
+        alt="Construction 2"
+        class="w-full h-full object-cover brightness-50"
+      />
+    </div>
+    <div
+      class="slide absolute inset-0 w-full h-full transition-opacity duration-1000 opacity-0"
+    >
+      <img
+        src="{% static 'images/hero3.avif' %}"
+        alt="Construction 3"
+        class="w-full h-full object-cover brightness-50"
+      />
+    </div>
+  </div>
+
+  <!-- Hero Content -->
+  <div
+    class="relative z-10 flex flex-col justify-center items-start h-full max-w-6xl mx-auto px-6 md:px-12 text-white"
+  >
+    <h1 class="text-4xl md:text-6xl font-bold mb-4">
+      Innovating Infrastructure, Inspiring Growth
+    </h1>
+    <p class="text-lg md:text-2xl mb-8 max-w-xl">
+      RB Construction delivers quality engineering and construction solutions on
+      time and on budget.
+    </p>
+    <div class="flex space-x-4">
+      <a
+        href="#projects"
+        class="bg-yellow-500 text-gray-900 px-6 py-3 rounded font-semibold hover:bg-yellow-400 transition"
+      >
+        View Projects
+      </a>
+      <a
+        href="#contact"
+        class="border border-white px-6 py-3 rounded font-semibold hover:bg-white hover:text-gray-900 transition"
+      >
+        Get a Quote
+      </a>
+    </div>
+  </div>
+
+  <!-- Slide Indicators -->
+  <div
+    class="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex space-x-3 z-20"
+  >
+    <span
+      class="dot w-3 h-3 rounded-full bg-white opacity-50 cursor-pointer"
+    ></span>
+    <span
+      class="dot w-3 h-3 rounded-full bg-white opacity-50 cursor-pointer"
+    ></span>
+    <span
+      class="dot w-3 h-3 rounded-full bg-white opacity-50 cursor-pointer"
+    ></span>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-20 bg-gray-100">
+  <div
+    class="container mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center gap-12"
+  >
+    <!-- Image -->
+    <div class="md:w-1/2">
+      <img
+        src="{% static 'images/about1.jpg' %}"
+        alt="Construction Team"
+        class="rounded-lg shadow-lg w-full"
+      />
+    </div>
+
+    <!-- Content -->
+    <div class="md:w-1/2">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
+        About RB Construction
+      </h2>
+
+      <!-- Values -->
+      <p
+        class="text-yellow-500 font-semibold mb-4 text-base md:text-lg lg:text-xl"
+      >
+        Passion, Honesty, Quality, Ethics
+      </p>
+
+      <!-- Description -->
+      <p class="text-gray-700 mb-4">
+        RB Construction & Engineering Ltd started with the sincere ideology to
+        cater to the industry with a bouquet of products and services—an
+        approach that was lacking back then. A group of highly passionate
+        professionals with hands-on experience and expertise in diverse subjects
+        came together to build this organization.
+      </p>
+
+      <p class="text-gray-700 mb-6 italic">"See you at the top!"</p>
+
+      <!-- Director -->
+      <div class="mt-6 flex items-center space-x-4">
+        <img
+          src="{% static 'images/rob1.jpeg' %}"
+          alt="Robinson Abuki"
+          class="w-16 h-16 rounded-full shadow-lg"
+        />
+        <div>
+          <p class="text-gray-900 font-semibold">Robinson Abuki</p>
+          <p class="text-gray-600 text-sm">Director</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="py-12 px-6">
+  <!-- ... services content ... -->
+</section>
+<!-- Interior Service Section -->
+<section
+  class="relative bg-fixed bg-center bg-cover"
+  style="
+    background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c');
+  "
+>
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+
+  <div class="relative max-w-6xl mx-auto px-6 py-24 text-center">
+    <h2 class="text-4xl md:text-5xl font-bold text-gray-100 mb-6">
+      Interior & Exterior Services
+    </h2>
+    <p class="text-lg md:text-xl text-gray-200 max-w-3xl mx-auto mb-10">
+      We transform spaces through innovation and precision — from
+      <span class="font-semibold">concept design</span> to
+      <span class="font-semibold">execution</span>, delivering quality
+      environments that blend aesthetics with functionality.
+    </p>
+
+    <!-- Highlighted Service Tags -->
+    <div class="flex flex-wrap justify-center gap-3 mb-10">
+      <span
+        class="px-4 py-2 bg-white/80 text-gray-900 font-medium rounded-full shadow"
+        >3D Renders & Drawings</span
+      >
+      <span
+        class="px-4 py-2 bg-white/80 text-gray-900 font-medium rounded-full shadow"
+        >Ceiling & Lighting</span
+      >
+      <span
+        class="px-4 py-2 bg-white/80 text-gray-900 font-medium rounded-full shadow"
+        >Flooring</span
+      >
+      <span
+        class="px-4 py-2 bg-white/80 text-gray-900 font-medium rounded-full shadow"
+        >Partitions & Glass</span
+      >
+      <span
+        class="px-4 py-2 bg-white/80 text-gray-900 font-medium rounded-full shadow"
+        >Custom Furniture</span
+      >
+      <span
+        class="px-4 py-2 bg-white/80 text-gray-900 font-medium rounded-full shadow"
+        >Landscaping</span
+      >
+      <span
+        class="px-4 py-2 bg-white/80 text-gray-900 font-medium rounded-full shadow"
+        >Pools & Gyms</span
+      >
+      <span
+        class="px-4 py-2 bg-white/80 text-gray-900 font-medium rounded-full shadow"
+        >Security & Automation</span
+      >
+    </div>
+
+    <a
+      href="#contact"
+      class="inline-block bg-yellow-500 text-gray-900 font-semibold px-6 py-3 rounded-lg shadow-lg hover:bg-yellow-400 transition"
+    >
+      Get in Touch
+    </a>
+  </div>
+</section>
+
+<!-- Featured Projects Section -->
+<section id="projects" class="py-16 bg-gray-100">
+  <div class="container mx-auto px-6">
+    <!-- Heading -->
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-800">
+        Featured Projects
+      </h2>
+      <p class="text-gray-600 mt-2">
+        A showcase of our recent work across different industries
+      </p>
+    </div>
+
+    <!-- Projects Grid -->
+    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+      {% for project in projects %}
+      <div class="relative group overflow-hidden rounded-2xl shadow-lg">
+        <img
+          src="{{ project.image.url }}"
+          alt="{{ project.title }}"
+          class="w-full h-64 object-cover transform group-hover:scale-110 transition duration-500"
+        />
+        <div
+          class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500"
+        >
+          <h3 class="text-white text-xl font-semibold">{{ project.title }}</h3>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <!-- See More Button -->
+    <div class="text-center mt-12">
+      <a
+        href="#projects"
+        class="px-6 py-3 bg-[#FFA725] text-white font-semibold rounded-lg shadow-md hover:bg-[#e69100] transition"
+      >
+        See More Projects
+      </a>
+    </div>
+  </div>
+</section>
+<!-- Our Customers Section -->
+<section class="py-16 bg-gray-50">
+  <div class="container mx-auto px-6">
+    <!-- Title -->
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold text-gray-800">Our Customers</h2>
+      <p class="text-gray-600 mt-2">
+        Trusted by leading companies and organizations
+      </p>
+    </div>
+
+    <!-- Logos Grid -->
+    <div
+      class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center justify-center"
+    >
+      {% for customer in customers %}
+      <div class="flex justify-center grayscale hover:grayscale-0 transition">
+        <img
+          src="{{ customer.logo.url }}"
+          alt="{{ customer.name }}"
+          class="h-16 object-contain"
+        />
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="bg-gray-900 text-white py-16 px-6">
+  <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12">
+    <!-- Contact Form -->
+    <div>
+      <h2 class="text-3xl font-bold mb-6">Get in Touch</h2>
+      <form action="#" method="POST" class="space-y-4">
+        {% csrf_token %}
+        <div>
+          <label class="block text-sm font-semibold mb-2">Name</label>
+          <input
+            type="text"
+            name="name"
+            placeholder="Enter your full name"
+            class="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 focus:ring-2 focus:ring-yellow-500 outline-none text-white"
+          />
+        </div>
+        <div>
+          <label class="block text-sm font-semibold mb-2">Phone</label>
+          <input
+            type="text"
+            name="phone"
+            placeholder="+254 700 000 000"
+            class="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 focus:ring-2 focus:ring-yellow-500 outline-none text-white"
+          />
+        </div>
+        <div>
+          <label class="block text-sm font-semibold mb-2">Email Address</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="you@example.com"
+            class="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 focus:ring-2 focus:ring-yellow-500 outline-none text-white"
+          />
+        </div>
+        <div>
+          <label class="block text-sm font-semibold mb-2">Message</label>
+          <textarea
+            name="message"
+            rows="4"
+            placeholder="Write your message here..."
+            class="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 focus:ring-2 focus:ring-yellow-500 outline-none text-white"
+          ></textarea>
+        </div>
+        <button
+          type="submit"
+          class="w-full bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-3 px-6 rounded-lg transition duration-300"
+        >
+          Send Message
+        </button>
+      </form>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="space-y-6">
+      <h2 class="text-3xl font-bold mb-6">Contact Information</h2>
+      <div class="space-y-4 text-gray-300">
+        <p>
+          <strong>Head Office:</strong> Waiyaki Way - Red Hill Link Road,
+          Nairobi, Kenya
+        </p>
+        <p>
+          <strong>Address:</strong> 2nd Floor, Astrol Square Rosslyn, Westland’s
+          Red Hill Link Road, P.O. Box 16945-00100 Nairobi
+        </p>
+        <p>
+          <strong>Phone:</strong> +254-721744567 (Head Office), +254-782055555
+          (Sales), +254-783055555 (Customer Service)
+        </p>
+        <p>
+          <strong>WhatsApp / Mobile:</strong> +254-702-284-771, +254-782-055-555
+        </p>
+        <p><strong>Email:</strong> admin@rbconstruction-engltd.com</p>
+        <p><strong>Website:</strong> www.rb-construction-engltd.com</p>
+        <p>
+          <strong>Working Hours:</strong> Mon–Fri: 08:00AM - 06:00PM | Sat:
+          09:00AM - 04:00PM
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

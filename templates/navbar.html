@@ -1,0 +1,87 @@
+{% load static %}
+<header
+  class="bg-gray-900 bg-opacity-40 text-white fixed w-full z-50 backdrop-blur-md shadow-none"
+>
+  <div class="container mx-auto flex justify-between items-center p-4">
+    <!-- Logo Image -->
+    <a href="{% url 'home' %}">
+      <img
+        src="{% static 'images/logo.webp' %}"
+        alt="RB Construction Logo"
+        class="h-10 md:h-12"
+      />
+    </a>
+
+    <!-- Desktop Menu -->
+    <ul class="hidden md:flex space-x-6 items-center">
+      <li>
+        <a href="{% url 'home' %}#home" class="hover:text-yellow-500">Home</a>
+      </li>
+      <li>
+        <a href="{% url 'home' %}#services" class="hover:text-yellow-500"
+          >Services</a
+        >
+      </li>
+      <li>
+        <a href="{% url 'home' %}#projects" class="hover:text-yellow-500"
+          >Projects</a
+        >
+      </li>
+      <li>
+        <a href="{% url 'home' %}#about" class="hover:text-yellow-500">About</a>
+      </li>
+      <li><a href="#" class="hover:text-yellow-500">Team</a></li>
+      <li>
+        <a
+          href="{% url 'home' %}#contact"
+          class="bg-yellow-500 text-gray-900 px-4 py-2 rounded hover:bg-yellow-400 font-semibold"
+        >
+          Contact
+        </a>
+      </li>
+    </ul>
+
+    <!-- Mobile Menu Button -->
+    <button id="menu-btn" class="md:hidden focus:outline-none text-2xl">
+      ☰
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <ul
+    id="mobile-menu"
+    class="hidden flex-col bg-gray-900 bg-opacity-90 text-white space-y-4 p-4 md:hidden"
+  >
+    <li>
+      <a href="{% url 'home' %}#home" class="block hover:text-yellow-500"
+        >Home</a
+      >
+    </li>
+    <li>
+      <a href="{% url 'home' %}#services" class="block hover:text-yellow-500"
+        >Services</a
+      >
+    </li>
+    <li>
+      <a href="{% url 'home' %}#projects" class="block hover:text-yellow-500"
+        >Projects</a
+      >
+    </li>
+    <li>
+      <a href="{% url 'home' %}#about" class="block hover:text-yellow-500"
+        >About</a
+      >
+    </li>
+    <li>
+      <a href="#" class="block hover:text-yellow-500">Team</a>
+    </li>
+    <li>
+      <a
+        href="{% url 'home' %}#contact"
+        class="block bg-yellow-500 text-gray-900 px-4 py-2 rounded hover:bg-yellow-400 font-semibold"
+      >
+        Contact
+      </a>
+    </li>
+  </ul>
+</header>
